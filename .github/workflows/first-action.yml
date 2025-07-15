@@ -6,9 +6,9 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello, World!"
-      - name: Print date and sleep
+      - name: Print date
         run: |
-        DATE=$(DATE)
-        echo $DATE
+          echo $(date)
+          echo "Nice!"
       - name: Print goodbye
         run: echo "Done - bye!"
