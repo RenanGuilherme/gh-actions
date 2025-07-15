@@ -6,5 +6,10 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello, World!"
+      - name: Print date and sleep
+        run: |
+        echo $(date)
+        sleep 5
+        echo $(date)
       - name: Print goodbye
         run: echo "Done - bye!"
