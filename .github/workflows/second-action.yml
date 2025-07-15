@@ -1,0 +1,11 @@
+name: Test Project
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # By default, your code isn't available on GH runner. You must download your repo to run any of it.
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: List directory
+        run: ls -ltr
