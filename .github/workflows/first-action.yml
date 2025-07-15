@@ -8,8 +8,8 @@ jobs:
         run: echo "Hello, World!"
       - name: Print date and sleep
         run: |
-        echo $(date)
+        date 
         sleep 5
-        echo $(date)
+        date
       - name: Print goodbye
         run: echo "Done - bye!"
