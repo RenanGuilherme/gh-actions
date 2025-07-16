@@ -1,6 +1,7 @@
 # Run the lint, test and build scripts on push.
 name: Practice 1 - lint, test, deploy
-on: push
+#on: push
+on: workflow_dispatch
 jobs:
   lint:
     runs-on: ubuntu-latest
